@@ -42,7 +42,6 @@ var assertValidUrl = function (url){
     //Did not get the other regexp syntax working
     var regex =  "\\b(https?|ftp|file)://[-A-Za-z0-9+&@#/%?=~_|!:,.;]*[-A-Za-z0-9+&@#/%=~_|]";
     var result = url.match(new RegExp(regex));
-    console.log((result != null) + " " + url);
 
     if(result == null) {
         console.log("%s is not a valid URL. Exiting.", url);
@@ -67,12 +66,12 @@ var cheerioHtmlUrl = function(urlstr, cb) {
 
     var req = http.request(options, function(res) {
         var output = '';
-        console.log('STATUS: ' + res.statusCode);
-        console.log('HEADERS: ' + JSON.stringify(res.headers));
+//        console.log('STATUS: ' + res.statusCode);
+//        console.log('HEADERS: ' + JSON.stringify(res.headers));
         res.setEncoding('utf8');
 
         res.on('data', function (chunk) {
-            console.log('BODY: ' + chunk);
+//            console.log('BODY: ' + chunk);
             output += chunk;
         });
         res.on('end', function() {
@@ -127,12 +126,14 @@ if(require.main == module) {
         .parse(process.argv);
 
     if (program.url !== undefined) {
+        console.log("Using -c " + program.checks + " -u " + program.url);
         checkHtmlUrl(program.url, program.checks, function (checkJson){
             var outJson = JSON.stringify(checkJson, null, 4);
             console.log(outJson);
         });
     }
     else {
+        console.log("Using -c " + program.checks + " -u " + program.file);
         var checkJson = checkHtmlFile(program.file, program.checks);
         var outJson = JSON.stringify(checkJson, null, 4);
         console.log(outJson);
