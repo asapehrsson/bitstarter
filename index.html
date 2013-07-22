@@ -143,26 +143,30 @@
     </div>
 </div>
 
+<!-- We use row-fluid inside containers to achieve a resizable layout. -->
+<!-- blogs.endjin.com/2013/04/tips-for-implementing-responsive-designs-using-bootstrap/ -->
+<!-- http://stackoverflow.com/a/12270322 -->
 <div class="container">
     <!-- Font and paired font of .heading/.subheading and body from Google Fonts -->
     <!-- www.google.com/fonts/specimen/Ubuntu -->
     <!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
     <div class="row-fluid heading">
         <div class="span12">
-            <h1>Product</h1>
+            <h1>Stand up!</h1>
         </div>
     </div>
     <div class="row-fluid subheading">
         <div class="span12">
             <!-- Special typography from Bootstrap for lead paragraph. -->
             <!-- http://twitter.github.io/bootstrap/base-css.html#typography -->
-            <p class="lead">One sentence description.</p>
+            <p class="lead">Sitting is Killing You</p>
         </div>
     </div>
     <div class="row-fluid pitch">
         <div class="span5 offset1 video">
-            <img class="img-polaroid" src="http://placehold.it/480x300">
+            <img class="img-polaroid" src="image-1.jpg">
         </div>
+
         <!-- We define a new 'actions' div to contain statistics, order, and share buttons.-->
         <div class="span5 actions">
             <div class="span8 offset2">
@@ -213,57 +217,71 @@
                 <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
             </div>
         </div>
-
     </div>
+
     <!-- Beyond this part the marketing copy begins. -->
     <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/text-align -->
     <!-- http://twitter.github.io/bootstrap/base-css.html#images -->
     <!-- http://placehold.it -->
     <div class="row-fluid section1">
         <div class="span5 offset1 asset">
-            <img class="img-polaroid" src="http://placehold.it/480x300">
+            <p>
+                Researchers has found that the longer you spend sitting down every day, the higher the risk of dying
+                prematurely, even if you engage in regular daily exercise
+
+                <br> <br>
+                While doing 30 minutes of daily aerobic exercise is certainly important to maintain heart health, its
+                also very important to decrease the amount of time we spend sitting.
+                <br>
+
+            </p>
+
         </div>
         <div class="span5 copy">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu
-                mollis justo velit at nunc. Fusce nec egestas sem. Donec
-                fringilla ante lectus, a pellentesque lacus dignissim ac. Sed
-                volutpat lorem ut congue malesuada. In facilisis scelerisque
-                turpis sed lacinia. Donec in orci lectus. Donec auctor semper
-                quam, eget rhoncus purus fringilla id. Phasellus id nibh eu
-                risus ultrices adipiscing. Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit. Donec porta, dui sagittis hendrerit
-                rutrum, nunc leo tempus nisl, eu mollis justo velit at
-                nunc. Fusce nec egestas sem. Donec fringilla.
-            </p>
+            <img class="img-polaroid" src="image-2.jpg">
         </div>
     </div>
 
     <div class="row-fluid section2">
         <div class="span5 offset1 copy copy-right">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu
-                mollis justo velit at nunc. Fusce nec egestas sem. Donec
-                fringilla ante lectus, a pellentesque lacus dignissim ac. Sed
-                volutpat lorem ut congue malesuada. In facilisis scelerisque
-                turpis sed lacinia. Donec in orci lectus. Donec auctor semper
-                quam, eget rhoncus purus fringilla id. Phasellus id nibh eu
-                risus ultrices adipiscing. Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit. Donec porta, dui sagittis hendrerit
-                rutrum, nunc leo tempus nisl, eu mollis justo velit at
-                nunc. Fusce nec egestas sem. Donec fringilla.
-            </p>
+            <img class="img-polaroid" src="image-3.jpg">
         </div>
         <div class="span5 asset">
-            <img class="img-polaroid" src="http://placehold.it/480x300">
+
+            <p>
+                The purpose of this product is to help people with office jobs get a better health and as a positive
+                side effect be more productive.
+
+
+                It can be used by individuals, as well as an enterprise initiative to improve the general workforce
+                health and get better productivity.
+            </p>
         </div>
     </div>
+
     <!-- For the FAQ, we introduce a little bit of JS, using the accordion. -->
     <!-- This brings in jquery.js and bootstrap.js as dependencies. -->
     <!-- http://twitter.github.io/bootstrap/javascript.html#collapse -->
     <div class="row-fluid faq">
+        <div class="offset1">
+            <p>
+        The product consist of apps, NFC tags and a central server.
+            <br><br>
+        The app acts as the personal client and is installed at a NFC enabled smartphone (it is possible to run without NFC support)
+        <br>NFC tags that simplifies monitoring of sitting/standing periods
+        <br>The backend collects data and statistics for the training rounds.
+            <br><br>
+
+        The NFC tags is pre-programmed and comes with easy identified symbols for sitting down or standing up.
+            <br><br>
+        A typical usage scenario is a group of colleagues that make a joint effort for a round. A round lasts 21 days
+        (four working weeks), that corresponds to the time forming a new habit.
+            <br><br>
+        The NFC tags is placed on the desks, as week as in the meeting rooms - encouraging stand-up meetings. The
+        day-to-day result is tracked, and can be compared with other participants. There is a competitive element in the
+        round to make it more fun.
+            </p>
+            </div>
         <div class="span10 offset1">
             <h3>FAQ</h3>
 
